@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Time 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHQ1NHZnN2FuM25oamE4bGV2YzJheGQ3ZXY3anVrbm5kMjM5dmR1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/06fwzd3g1Y71eHV5SP/giphy.gif " alt="Heart" class="gifted-img">
+    <h1>Hey there! 😊</h1>
+    <p>There's something I want to tell you...</p>
+    <button id="confessBtn">Click to find out 💖</button>
+    <p id="confession" class="hidden">I really like you! 💕</p>
+</div>
+    
+
+    <script>
+        const button = document.getElementById('confessBtn');
+        const confession = document.getElementById('confession');
+
+        button.addEventListener('click', () => {
+            confession.classList.remove('hidden');
+            button.style.display = 'none';
+        });
+    </script>
+    
+</body>
+</html>
